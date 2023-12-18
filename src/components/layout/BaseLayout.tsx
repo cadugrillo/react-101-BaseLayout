@@ -8,15 +8,17 @@ import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import Dashboard from '../dashboard/Dashboard';
-import Orders from '../Orders';
 import SideNavBar from './SideNavBar';
 import Logo from './Logo';
+import Dashboard from '../dashboard/Dashboard';
+import Orders from '../Orders';
+import Customers from '../Customers';
+import Reports from '../Reports';
+import Integrations from '../Integrations';
 
 
 const drawerWidth: number = 240;
@@ -110,11 +112,7 @@ export default function BaseLayout() {
             >
               My App
             </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            <Button variant="contained" color="secondary">Login</Button>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
@@ -148,8 +146,11 @@ export default function BaseLayout() {
           <Toolbar />
           {/* Router Outlet goes here */}
           <Routes>
-            <Route path='/' element={<Dashboard />}></Route>
-            <Route path='/orders' element={<Orders />}></Route>
+          <Route path='/' element={<Dashboard />}></Route>
+          <Route path='/orders' element={<Orders />}></Route>
+          <Route path='/customers' element={<Customers />}></Route>
+          <Route path='/reports' element={<Reports />}></Route>
+          <Route path='/integrations' element={<Integrations />}></Route>
           </Routes>
         </Box>
       </Box>

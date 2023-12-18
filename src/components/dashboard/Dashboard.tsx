@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Chart from './components/Chart';
 import Deposits from './components/Deposits';
-import Orders from './components/Orders';
+import Orders from './components/RecentOrders';
 
 const Dashboard = () => {
   return (

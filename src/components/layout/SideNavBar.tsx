@@ -29,19 +29,19 @@ const SideNavBar = () => {
       </ListItemIcon>
       <ListItemText primary="Orders" />
     </ListItemButton>
-    <ListItemButton onClick={() => navigate('/')}>
+    <ListItemButton onClick={() => navigate('/customers')}>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="Customers" />
     </ListItemButton>
-    <ListItemButton onClick={() => navigate('/')}>
+    <ListItemButton onClick={() => navigate('/reports')}>
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItemButton>
-    <ListItemButton onClick={() => navigate('/')}>
+    <ListItemButton onClick={() => navigate('/integrations')}>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
