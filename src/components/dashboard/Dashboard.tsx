@@ -3,9 +3,9 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import Chart from './Chart';
-import Deposits from './Deposits';
-import Orders from './Orders';
+import Chart from './components/Chart';
+import Deposits from './components/Deposits';
+import Orders from './components/Orders';
 
 const Dashboard = () => {
   return (

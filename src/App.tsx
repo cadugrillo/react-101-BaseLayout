@@ -1,4 +1,4 @@
-import BaseLayout from "./components/BaseLayout";
+import BaseLayout from "./components/layout/BaseLayout";
 import { BrowserRouter as Router} from "react-router-dom";
 
 function App() {

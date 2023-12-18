@@ -13,8 +13,8 @@ import Badge from '@mui/material/Badge';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import Dashboard from './dashboard/Dashboard';
-import Orders from './Orders';
+import Dashboard from '../dashboard/Dashboard';
+import Orders from '../Orders';
 import SideNavBar from './SideNavBar';
 import Logo from './Logo';
 
@@ -146,7 +146,7 @@ export default function BaseLayout() {
           }}
         >
           <Toolbar />
-          {/* Router Outlet comes here */}
+          {/* Router Outlet goes here */}
           <Routes>
             <Route path='/' element={<Dashboard />}></Route>
             <Route path='/orders' element={<Orders />}></Route>
